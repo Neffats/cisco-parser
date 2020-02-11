@@ -1,0 +1,44 @@
+package lexertoken
+
+type TokenType int
+
+// https://www.cisco.com/c/en/us/td/docs/security/asa/asa90/configuration/guide/asa_90_cli_config/acl_extended.html
+
+const (
+	TOKEN_ERROR TokenType = iota
+	TOKEN_EOF
+	TOKEN_NEWLINE
+
+	TOKEN_ACL
+	TOKEN_ACL_NAME
+
+	TOKEN_LINE
+	TOKEN_LINE_NUMBER
+
+	TOKEN_EXTENDED
+
+	TOKEN_ACTION
+
+	TOKEN_PROTO
+	TOKEN_PORT
+	TOKEN_PORT_LT
+	TOKEN_PORT_GT
+	TOKEN_PORT_EQ
+	TOKEN_PORT_NEQ
+	TOKEN_PORT_RANGE
+
+	TOKEN_PROTO_ID
+	TOKEN_PROTO_OBJ_GRP
+	TOKEN_PROTO_OBJ
+
+	TOKEN_SRC_HOST
+	TOKEN_SRC_ANY
+	TOKEN_SRC_OBJ
+	TOKEN_SRC_OBJ_GRP
+
+	TOKEN_DEST_HOST
+	TOKEN_DEST_NET
+	TOKEN_DEST_ANY
+	TOKEN_DEST_OBJ
+	TOKEN_DEST_OBJ_GRP
+)
